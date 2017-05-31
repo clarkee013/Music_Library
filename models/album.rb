@@ -43,7 +43,7 @@ class Album
   end
 
   def delete_by_title()
-    sql = "DELETE FROM album WHERE name = #{@title}"
+    sql = "DELETE FROM album WHERE name = #{@title};"
      SqlRunner.run(sql)
    end 
 
