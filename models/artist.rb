@@ -34,7 +34,15 @@ class Artist
     SqlRunner.run(sql)
   end
 
+  def self.list_artist_albums()
+    sql = "SELECT * FROM artist WHERE album = #{@title};"
+    result = SqlRunner.run(sql)
+    return result
+  end
 
+  def self.delete_single_artist()
+    sql = "DELETE from artist WHERE artist = #{@name}"
+  end
 
 
 
